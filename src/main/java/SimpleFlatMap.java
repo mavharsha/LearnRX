@@ -33,7 +33,7 @@ public class SimpleFlatMap {
 		
 		System.out.println("*** With out flatmap, using for loop ***");
 		myObservable
-		.subscribe(list->{
+			.subscribe(list->{
 			for(String string: list){
 				System.out.println(string);
 			}
@@ -57,7 +57,8 @@ public class SimpleFlatMap {
 		
 		System.out.println("*** With FlatMap ***");
 
-		myObservable.flatMap(new Func1<List<String>, Observable<String>>() {
+		myObservable
+			.flatMap(new Func1<List<String>, Observable<String>>() {
 			@Override
 			public Observable<String> call(List<String> list) {
 				return Observable.from(list);
