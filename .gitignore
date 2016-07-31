@@ -1,0 +1,6 @@
+#Files you ask git to ignore
+*/*.class
+.classpath
+.project
+.settings
+

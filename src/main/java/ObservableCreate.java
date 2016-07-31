@@ -40,7 +40,7 @@ public class ObservableCreate {
 
 				try {
 					if (!subscriber.isUnsubscribed()) {
-						for (int counter = 1; counter < n; counter++) {
+						for (int counter = 1; counter <= n; counter++) {
 							subscriber.onNext(counter);
 						}
 						subscriber.onCompleted();
